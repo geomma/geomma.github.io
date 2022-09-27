@@ -7,7 +7,7 @@
     <title>geomma.github.io</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <!-- and it's easy to individually load additional languages -->
@@ -18,6 +18,18 @@
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
     <p>with Script</p>
+    <pre><code class="language-c#">
+      var x;
+      x=1;
+    </code></pre>
     <pre><code class="language-html"><a>abc</a></code></pre>
+    <pre><code class="language-html"><a>abc</a></code></pre>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
+    </script>
   </body>
 </html>
